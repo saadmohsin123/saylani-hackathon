@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Topbar from '../src/components/topbar/Topbar';
 import Homepage from '../src/pages/home/Home';
 import Login from '../src/pages/login/Login';
@@ -6,12 +5,12 @@ import Register from '../src/pages/register/Register';
 import Settings from '../src/pages/settings/Settings';
 import Single from '../src/pages/single/Single';
 import Write from '../src/pages/write/Write';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const currentUser = true;
-
+  const currentUser = false;
   return (
-    <Router>
+     <Router>
       <Topbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -39,3 +38,4 @@ function App() {
 }
 
 export default App;
+
