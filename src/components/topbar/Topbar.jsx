@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 
 
 export default function Topbar() {
-  const user = false;
+  const user = true;
     return (
       <div className="top">
         <div className="topLeft">BLOG WEBSITE</div>
